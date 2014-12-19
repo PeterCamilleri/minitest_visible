@@ -4,6 +4,8 @@ require "minitest_visible/version"
 #running of tests under the MiniTest gem.
 module MinitestVisible
 
+  #This replacement initialize method adds the visible functionality while
+  #preserving the exist code logic.
   def initialize(*all)
     unless defined? $minitest_visible_once_per_run
       $minitest_visible_once_per_run = :done
@@ -20,3 +22,4 @@ module MinitestVisible
   end
 
 end
+
