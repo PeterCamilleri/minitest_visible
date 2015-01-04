@@ -12,7 +12,7 @@ all the chaos of going fully verbose. A sample run follows:
 
     # Running tests:
 
-    MiniTest version = 4.7.5, MinitestVisible version = 0.0.1
+    MiniTest version = 4.7.5
 
     Running test file: array_test.rb
     .
