@@ -8,8 +8,7 @@ module MinitestVisible
     action = lambda do |*all|
       unless defined? $minitest_visible_once_per_run
         $minitest_visible_once_per_run = :done
-        puts "MiniTest version = #{MiniTest::Unit::VERSION}, " +
-             "MinitestVisible version = #{MinitestVisible::VERSION}"
+        puts "MiniTest version = #{MiniTest::Unit::VERSION}"
       end
 
       if $minitest_visible_once_per_file != file
