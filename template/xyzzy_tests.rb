@@ -12,7 +12,7 @@ class TheThingBeingTestedTester < Minitest::Test
   #Track mini-test progress.
   MinitestVisible.track self, __FILE__
 
-  #Actual tests methds go here
+  #Actual tests methods go here
 
 end
 
