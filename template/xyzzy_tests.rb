@@ -10,7 +10,7 @@ require          'minitest_visible'
 class TheThingBeingTestedTester < Minitest::Test
 
   #Track mini-test progress.
-  MinitestVisible.track self, __FILE__
+  include MinitestVisible
 
   #Actual tests methods go here
 

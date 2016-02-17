@@ -71,7 +71,7 @@ Simply add the line:
 
 Then, in the body of your test class add:
 
-    MinitestVisible.track self, __FILE__
+    include MinitestVisible
 
 That is all that is needed. Test output will now be decorated as shown above.
 While this is a bit more ceremony than is desirable, test files have a fair bit

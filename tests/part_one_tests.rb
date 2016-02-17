@@ -8,7 +8,7 @@ require          'minitest_visible'
 class PartOneTester < Minitest::Test
 
   #Track mini-test progress.
-  MinitestVisible.track self, __FILE__
+  include MinitestVisible
 
   def test_for_one
     assert_equal(1, 1.0)
