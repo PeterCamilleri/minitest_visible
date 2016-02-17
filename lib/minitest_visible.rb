@@ -17,8 +17,7 @@ module MinitestVisible
       end
 
       super(*all)
-
-      end
+    end
 
     target.send(:define_method, :initialize, &action)
   end

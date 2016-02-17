@@ -1,6 +1,7 @@
 #!/usr/bin/env rake
 # coding: utf-8
 
+require 'rake/testtask'
 require 'rdoc/task'
 require "bundler/gem_tasks"
 
@@ -17,8 +18,15 @@ RDoc::Task.new do |rdoc|
   #rdoc.options << '--coverage-report'
 
   #Set a title.
-  rdoc.options << '--title' << 'fOOrth Language Internals'
+  rdoc.options << '--title' << 'Minitest Visible Internals'
 
+end
+
+#Run the fOOrth unit test suite.
+Rake::TestTask.new do |t|
+  #List out all the test files.
+  t.test_files = FileList['tests/**/*.rb']
+  t.verbose = false
 end
 
 desc "Run a scan for smelly code!"
