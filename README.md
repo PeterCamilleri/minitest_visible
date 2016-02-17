@@ -74,6 +74,9 @@ Then, in the body of your test class add:
     MinitestVisible.track self, __FILE__
 
 That is all that is needed. Test output will now be decorated as shown above.
+While this is a bit more ceremony than is desirable, test files have a fair bit
+of boilerplate stuff as it is. The template folder has the file xyzzy_test.rb
+which is my template for creating test files. Copy, rename and use as you wish.
 
 ## Contributing
 
