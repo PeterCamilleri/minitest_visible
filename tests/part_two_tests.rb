@@ -4,7 +4,7 @@ gem              'minitest'
 require          'minitest/autorun'
 require          'minitest_visible'
 
-#Test the monkey patches applied to the Object class.
+#Test the testing process.
 class PartTwoTester < Minitest::Test
 
   #Track mini-test progress.
