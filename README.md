@@ -78,6 +78,15 @@ While this is a bit more ceremony than is desirable, test files have a fair bit
 of boilerplate stuff as it is. The template folder has the file xyzzy_test.rb
 which is my template for creating test files. Copy, rename and use as you wish.
 
+## Compatibility
+
+The API of this gem is new compared to how it was under versions before 0.1.0.
+Code using the older API will continue to work and tests will not suddenly
+break (at least not due to minitest_visible). However, test files using the
+obsolete API will now generate the following warning:
+
+    The track method is deprecated. Use include MinitestVisible instead.
+
 ## Contributing
 
 1. Fork it
