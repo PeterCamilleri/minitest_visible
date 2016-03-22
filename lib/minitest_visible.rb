@@ -14,6 +14,10 @@ module MinitestVisible
         puts "MiniTest version = #{MiniTest::Unit::VERSION}"
       end
 
+      unless defined? $minitest_visible_once_per_file
+        $minitest_visible_once_per_file = nil
+      end
+
       if $minitest_visible_once_per_file != file
         puts "\nRunning test file: #{File.split(file)[1]}"
         $minitest_visible_once_per_file = file
