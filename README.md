@@ -63,6 +63,9 @@ Or install it yourself as:
 
     $ gem install minitest_visible
 
+The minitest_visible gem is at: ( https://rubygems.org/gems/minitest_visible )
+
+
 ## Usage
 
 Simply add the line:
